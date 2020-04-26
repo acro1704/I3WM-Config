@@ -30,11 +30,12 @@ font pango:monospace 8
 floating_modifier $mod
 
 #EigenerStuff
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id nm-applet
 exec --no-startup-id mate-power-manager
+exec --no-startup-id dunst
+exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-volumed
 exec --no-startup-id indicator-cpufreq
+exec --no-startup-id nitrogen --restore
 bindsym $mod+l exec i3lock
 
 #exec --no-startup-id compton --config ~/.config/compton.conf -b
